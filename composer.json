@@ -1,0 +1,26 @@
+{
+    "name": "mario/payanyway",
+    "description": "PHP library for PayAnyWay payment system",
+    "keywords": ["mario", "payanyway", "payment"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mario",
+            "email": "gm.mihail@mail.ru"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/maruo/payanyway",
+        "issues": "https://github.com/maruo/payanyway/issues"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payanyway\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
