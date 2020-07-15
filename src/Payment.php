@@ -95,7 +95,7 @@ class Payment
         }
 
         $string .= "<input type='hidden' name='moneta.locale' value='$this->moneta_locale'>";
-        $string .= "<input type='submit' class='{$this->submit_button_class}' name='{$this->submit_button_name}'></form>";
+        $string .= "<input type='submit' class='{$this->submit_button_class}' value='{$this->submit_button_name}'></form>";
 
         return $string;
     }
@@ -207,6 +207,13 @@ class Payment
     public function setSubscriberId($id)
     {
         $this->data['MNT_SUBSCRIBER_ID'] = (int) $id;
+
+        return $this;
+    }
+
+    public function setButtonName($name)
+    {
+        $this->submit_button_name = $name;
 
         return $this;
     }
